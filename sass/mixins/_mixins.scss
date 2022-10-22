@@ -1,0 +1,12 @@
+@mixin positioning($position, $width, $height){
+    position: $position;
+    width: $width;
+    height: $height;
+}
+
+@mixin background($position, $size) {
+    background-position: $position;
+    background-size: $size;
+}
+
+    

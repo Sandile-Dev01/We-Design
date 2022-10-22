@@ -7,13 +7,11 @@ body{
 }
 
 #container{
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100vh;
+
+    @include positioning(relative, 100%, 100vh);
+    @include background(center, cover);
+
     background-image: url(https://static.vecteezy.com/system/resources/previews/001/984/861/original/abstract-blue-geometric-circles-overlapping-background-with-light-blue-free-vector.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .navbar-brand{
@@ -22,7 +20,14 @@ body{
 
 .nav{
     font-family: $tertiary;
-    font-weight: bold;
+
+    li{  
+        font-weight: bold;
+
+        &:hover{
+            color: white;
+        }
+    }
 }
 
 .content{

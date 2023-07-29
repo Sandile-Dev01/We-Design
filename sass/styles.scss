@@ -1,59 +1,171 @@
-@use './index/' as *;
+@use "./index/" as *;
 
 *,
 html,
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
 }
 
-#container{
+$light-clr: #ffffff;
+$dark-clr: black;
+$accent-clr-1: #0f60d1;
+$accent-clr-2: #fff8de;
+$accent-clr-3: #ebc590;
 
-    @include positioning(relative, 100%, 100vh);
+@media (min-width: 0px) {
+  #container {
+    @include positioning(relative, 100%, 100dvh);
     @include background(center, cover);
 
-    background-image: url(https://static.vecteezy.com/system/resources/previews/001/984/861/original/abstract-blue-geometric-circles-overlapping-background-with-light-blue-free-vector.jpg);
-}
+    background-image: url(https://cdn.homedit.com/wp-content/uploads/2021/11/Modern-Mansion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-.navbar-brand{
+  .navbar-brand {
     font-family: $primary;
-}
+    color: $accent-clr-3;
+    margin-right: 0;
 
-.nav{
-    font-family: $tertiary;
-
-    li{  
-        font-weight: bold;
-
-        &:hover{
-            color: white;
-        }
+    &:hover {
+      cursor: default;
+      color: $accent-clr-3;
     }
-}
+  }
 
-.content{
+  .nav {
+    font-family: $secondary;
+
+    li {
+      font-weight: bold;
+
+      a {
+        color: $light-clr;
+      }
+    }
+  }
+
+  //   .nav-link{
+
+  //   }
+
+  .content {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    bottom: 10%;
+    text-align: start;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 
-    & h1{
-        font-family: $primary;
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-shadow: 0 0 2px $dark-clr;
+      color: $accent-clr-3;
+      font-family: $primary;
     }
 
-    & p{
-        font-family: $secondary;
+    p {
+      color: $light-clr;
+      text-shadow: 0 0 10px $dark-clr;
+      font-family: $secondary;
     }
+  }
 
-    & a{
-        font-family: $secondary;
-        margin-left: 50%;
-        transform: translate(-50%);
+  button {
+    outline: none;
+    padding: 0.5em 3em;
+    text-shadow: 0 0 10px $dark-clr;
+    border: 2px solid $accent-clr-3;
+    color: $accent-clr-3;
+    background-color: transparent;
+    font-family: $primary;
+
+    &:hover {
+      opacity: 0.9;
     }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-family: $primary;
+    color: $accent-clr-3;
+    text-decoration: 0 0 10px;
+
+    a {
+      text-decoration: 0 0 0.1px white;
+      color: $accent-clr-1;
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        color: $accent-clr-2;
+      }
+    }
+  }
 }
 
-.btn{
-    padding: 0.5em 3em;
-
-    &:hover{
-        text-decoration: underline;
+@media (min-width: 500px) {
+  .content {
+    h1 {
+      font-size: 4rem;
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .content {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav {
+    font-family: $secondary;
+
+    li {
+      font-weight: bold;
+
+      a {
+        color: $light-clr;
+      }
+    }
+  }
+
+  .content {
+    width: 40%;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 900;
+    }
+
+    p {
+      font-family: $secondary;
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+  }
 }

@@ -2,51 +2,134 @@
 html,
 body {
   box-sizing: border-box;
-}
-
-#container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-image: url(https://static.vecteezy.com/system/resources/previews/001/984/861/original/abstract-blue-geometric-circles-overlapping-background-with-light-blue-free-vector.jpg);
-}
-
-.navbar-brand {
-  font-family: "Orbitron";
-}
-
-.nav {
-  font-family: "Barlow Condensed";
-}
-.nav li {
-  font-weight: bold;
-}
-.nav li:hover {
+  margin: 0;
   color: white;
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+@media (min-width: 0px) {
+  #container {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://cdn.homedit.com/wp-content/uploads/2021/11/Modern-Mansion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .navbar-brand {
+    font-family: "Orbitron";
+    color: #ebc590;
+    margin-right: 0;
+  }
+  .navbar-brand:hover {
+    cursor: default;
+    color: #ebc590;
+  }
+  .nav {
+    font-family: "Barlow Condensed";
+  }
+  .nav li {
+    font-weight: bold;
+  }
+  .nav li a {
+    color: #ffffff;
+  }
+  .content {
+    position: absolute;
+    bottom: 10%;
+    text-align: start;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .content h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0 0 2px black;
+    color: #ebc590;
+    font-family: "Orbitron";
+  }
+  .content p {
+    color: #ffffff;
+    text-shadow: 0 0 10px black;
+    font-family: "Barlow Condensed";
+  }
+  button {
+    outline: none;
+    padding: 0.5em 3em;
+    text-shadow: 0 0 10px black;
+    border: 2px solid #ebc590;
+    color: #ebc590;
+    background-color: transparent;
+    font-family: "Orbitron";
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+  footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-family: "Orbitron";
+    color: #ebc590;
+    -webkit-text-decoration: 0 0 10px;
+            text-decoration: 0 0 10px;
+  }
+  footer a {
+    -webkit-text-decoration: 0 0 0.1px white;
+            text-decoration: 0 0 0.1px white;
+    color: #0f60d1;
+    transition: all 250ms ease-in-out;
+  }
+  footer a:hover {
+    color: #fff8de;
+  }
 }
-.content h1 {
-  font-family: "Orbitron";
+@media (min-width: 500px) {
+  .content h1 {
+    font-size: 4rem;
+  }
 }
-.content p {
-  font-family: "Satisfy";
+@media (min-width: 640px) {
+  .content {
+    width: 70%;
+  }
 }
-.content a {
-  font-family: "Satisfy";
-  margin-left: 50%;
-  transform: translate(-50%);
+@media (min-width: 768px) {
+  .content {
+    width: 60%;
+  }
 }
-
-.btn {
-  padding: 0.5em 3em;
+@media (min-width: 1000px) {
+  .content h1 {
+    font-size: 5rem;
+  }
 }
-.btn:hover {
-  text-decoration: underline;
+@media (min-width: 1440px) {
+  .nav {
+    font-family: "Barlow Condensed";
+  }
+  .nav li {
+    font-weight: bold;
+  }
+  .nav li a {
+    color: #ffffff;
+  }
+  .content {
+    width: 40%;
+  }
+  .content h1 {
+    font-size: 6rem;
+    font-weight: 900;
+  }
+  .content p {
+    font-family: "Barlow Condensed";
+  }
+  footer {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -79,9 +79,9 @@ $accent-clr-3: #ebc590;
     }
   }
 
-  //   .nav-link{
-
-  //   }
+  .nav-link {
+    padding-left: 0;
+  }
 
   .content {
     position: absolute;
@@ -101,8 +101,9 @@ $accent-clr-3: #ebc590;
     }
 
     p {
+      font-size: 1.1rem;
       color: $light-clr;
-      text-shadow: 0 0 10px $dark-clr;
+      text-shadow: 1px 1px 0 $dark-clr;
       font-family: $secondary;
     }
   }

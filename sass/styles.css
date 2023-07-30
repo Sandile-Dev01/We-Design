@@ -88,6 +88,9 @@ body {
   .nav li a:hover, .nav li a:active, .nav li a:focus {
     color: #ebc590;
   }
+  .nav-link {
+    padding-left: 0;
+  }
   .content {
     position: absolute;
     bottom: 10%;
@@ -105,8 +108,9 @@ body {
     font-family: "Orbitron";
   }
   .content p {
+    font-size: 1.1rem;
     color: #ffffff;
-    text-shadow: 0 0 10px black;
+    text-shadow: 1px 1px 0 black;
     font-family: "Barlow Condensed";
   }
   .home_button {

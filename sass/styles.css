@@ -56,7 +56,8 @@ body {
     text-shadow: 0 0 10px black;
     font-family: "Barlow Condensed";
   }
-  button {
+  .home_button {
+    text-decoration: none;
     outline: none;
     padding: 0.5em 3em;
     text-shadow: 0 0 10px black;
@@ -64,27 +65,12 @@ body {
     color: #ebc590;
     background-color: transparent;
     font-family: "Orbitron";
-  }
-  button:hover {
-    opacity: 0.9;
-  }
-  footer {
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    font-family: "Orbitron";
-    color: #ebc590;
-    -webkit-text-decoration: 0 0 10px;
-            text-decoration: 0 0 10px;
-  }
-  footer a {
-    -webkit-text-decoration: 0 0 0.1px white;
-            text-decoration: 0 0 0.1px white;
-    color: #0f60d1;
     transition: all 250ms ease-in-out;
   }
-  footer a:hover {
-    color: #fff8de;
+  .home_button:hover {
+    background-color: #ebc590;
+    color: black;
+    text-shadow: none;
   }
 }
 @media (min-width: 500px) {

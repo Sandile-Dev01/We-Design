@@ -75,7 +75,8 @@ $accent-clr-3: #ebc590;
     }
   }
 
-  button {
+  .home_button {
+    text-decoration: none;
     outline: none;
     padding: 0.5em 3em;
     text-shadow: 0 0 10px $dark-clr;
@@ -83,28 +84,12 @@ $accent-clr-3: #ebc590;
     color: $accent-clr-3;
     background-color: transparent;
     font-family: $primary;
+    transition: all 250ms ease-in-out;
 
     &:hover {
-      opacity: 0.9;
-    }
-  }
-
-  footer {
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
-    font-family: $primary;
-    color: $accent-clr-3;
-    text-decoration: 0 0 10px;
-
-    a {
-      text-decoration: 0 0 0.1px white;
-      color: $accent-clr-1;
-      transition: all 250ms ease-in-out;
-
-      &:hover {
-        color: $accent-clr-2;
-      }
+      background-color: $accent-clr-3;
+      color: $dark-clr;
+      text-shadow: none;
     }
   }
 }

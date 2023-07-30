@@ -4,18 +4,68 @@ body {
   box-sizing: border-box;
   margin: 0;
   color: white;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 0px) {
   #container {
+    background-image: url(https://cdn.homedit.com/wp-content/uploads/2021/11/Modern-Mansion.jpg);
     position: relative;
     width: 100%;
     height: 100dvh;
     background-position: center;
-    background-size: cover;
-    background-image: url(https://cdn.homedit.com/wp-content/uploads/2021/11/Modern-Mansion.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(1.2);
+  }
+  #one {
+    background-image: url("https://cdn.homedsgn.com/wp-content/uploads/2014/05/Modern-Mansion-on-Sunset-Plaza-Drive-06.jpg");
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(1.2);
+  }
+  #two {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/58487dc4b8a79b6d02499b60/d779760a-5028-4209-ac02-6c72b19e6455/Francis+York+Bespoke+Modern+Mansion+in+the+Hills+of+Bel+Air+4.jpg");
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(1.2);
+  }
+  #three {
+    background-image: url("https://e0.pxfuel.com/wallpapers/235/719/desktop-wallpaper-modern-mansions-background-1920x1080-mansion.jpg");
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(1.2);
+  }
+  #four {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5e30b4c769dcbf426b421101/1627933275320-72S5CGBXSZ8248X2K9X0/01-Bundy-Drive-Brentwood-Luxury-Poolside-Living.jpg");
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(1.2);
   }
   .navbar-brand {
     font-family: "Orbitron";
@@ -34,6 +84,9 @@ body {
   }
   .nav li a {
     color: #ffffff;
+  }
+  .nav li a:hover, .nav li a:active, .nav li a:focus {
+    color: #ebc590;
   }
   .content {
     position: absolute;
